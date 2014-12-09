@@ -1,5 +1,5 @@
-import utfpr.dainf.if62c.pratica.Time;
-import utfpr.dainf.if62c.pratica.Jogador;
+import utfpr.ct.dainf.if62c.pratica.Time;
+import utfpr.ct.dainf.if62c.pratica.Jogador;
 
 /**
  * UTFPR - Universidade Tecnológica Federal do Paraná
