@@ -10,12 +10,12 @@ import java.util.HashMap;
  * @author b1zon_000
  */
 public class Time {
-       private HashMap<String, Jogador> jogadores = new HashMap<>();
-       
+       private final HashMap<String, Jogador> jogadores = new HashMap<>();
+
        public HashMap<String, Jogador> getJogador(){
               return jogadores;
        }
-       public Jogador addjogador(String posicao,Jogador nome){
-              return jogadores.put(posicao, nome);
+       public void addJogador(String posicao,Jogador nome){
+              jogadores.put(posicao, nome);
        }
 }

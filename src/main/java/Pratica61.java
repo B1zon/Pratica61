@@ -1,6 +1,5 @@
 import utfpr.dainf.if62c.pratica.Time;
 import utfpr.dainf.if62c.pratica.Jogador;
-import java.util.*;
 
 /**
  * UTFPR - Universidade Tecnológica Federal do Paraná
@@ -21,21 +20,19 @@ public class Pratica61 {
           Time time1 = new Time();
           Time time2 = new Time();
           
-          time1.addjogador("goleiro", jogador1);
-          time1.addjogador("zagueiro", jogador2);
-          time1.addjogador("atacante", jogador3);
-          time2.addjogador("goleiro", jogador4);
-          time2.addjogador("zagueiro", jogador5);
-          time2.addjogador("atacante", jogador6);
+          time1.addJogador("goleiro", jogador1);
+          time1.addJogador("zagueiro", jogador2);
+          time1.addJogador("atacante", jogador3);
+          time2.addJogador("goleiro", jogador4);
+          time2.addJogador("zagueiro", jogador5);
+          time2.addJogador("atacante", jogador6);
           
           System.out.println("Posição    Time 1        Time 2");
-    
-        /*  Set<String> keySet = time1.getJogador();
         
-          for (String key : keySet) {
+          for (String key : time1.getJogador().keySet()) {
                System.out.println(key + "    " 
-                    + time1.get(key).toString() 
-                    + " " + time1.get(key).toString());
-          }*/
+                    + time1.getJogador().get(key).toString() 
+                    + " " + time2.getJogador().get(key).toString());
+          }
     }
 }
